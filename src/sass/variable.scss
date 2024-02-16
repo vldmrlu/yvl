@@ -1,1 +1,43 @@
 $color-1: #000;
+$color-2: #fff;
+$color-3: #551a41;
+
+// Bb
+
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1200px;
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+
+.container {
+    width: 100%;
+    max-width: $bp-xlarge;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    min-width: 288px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    background: #fff;
+    box-shadow: 0 4px 100px 0 rgba(255, 0, 153, 0.25);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    color: $color-3;
+    text-decoration: unset;
+    transition: all 0.3s ease, box-shadow 0.3s ease; // Add transition for smooth animation
+
+    &:hover {
+        background: $color-3; // Change background color on hover
+        color: #fff; // Change text color on hover
+        box-shadow: 0 6px 150px 0 rgba(255, 0, 153, 0.8); // Increase box shadow on hover
+    }
+}
