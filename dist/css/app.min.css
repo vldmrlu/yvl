@@ -79,7 +79,7 @@ body {
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
           clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   font-weight: 800;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 100%;
   color: #551a41;
   text-decoration: unset;
@@ -188,6 +188,14 @@ header nav {
 }
 .hero-content .btn {
   margin-top: 50px;
+  width: 100%;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .hero-content .btn {
+    width: unset;
+    padding: 22px;
+  }
 }
 
 .content {
