@@ -344,7 +344,20 @@ header nav {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  flex-direction: column;
   margin-top: 50px;
+}
+.content-text .note-footer .price {
+  display: flex;
+  margin-bottom: 20px;
+}
+.content-text .note-footer .price span {
+  color: #bd1886;
+  font-size: 42px;
+}
+.content-text .note-footer .price p {
+  margin-right: 20px;
+  text-decoration: line-through;
 }
 .content-text .note-footer .btn {
   margin-top: 0;
